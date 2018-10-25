@@ -219,9 +219,9 @@ public class Main {
     public static double[][] model(double[] vector, double[][] matr, int steps) {
         double[] resVect = null;
         double[][] fullRes = new double[steps][vector.length];
-        for (int i = 1; i < steps; i++) {
+        for (int i = 0; i < steps; i++) {
             //System.out.println("-------Итерация " + (i + 1) + " ---------");
-            resVect = CalcMath(i, matr, vector);
+            resVect = CalcMath(i+1, matr, vector);
             //matrPrnt(resVect);
 
 
